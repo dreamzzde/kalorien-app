@@ -6,27 +6,32 @@
 
 <body>
 
-    <h1>Kalorien Tracker</h1>
+     <div class="app">
+         
+        <h1>Kalorien Tracker</h1>
     
-    <form id="addMealForm">
-      <input id="mealName" placeholder="Lebensmittel" required />
-      <input id="mealCalories" type="number" placeholder="kcal" required />
-      <button>+</button>
-    </form>
+            <form id="addMealForm">
+          <input id="mealName" placeholder="Lebensmittel" required />
+          <input id="mealCalories" type="number" placeholder="kcal" required />
+          <button>+</button>
+        </form>
     
-    <h2>Mahlzeiten</h2>
-    <ul id="mealList"></ul>
+        <h2>Mahlzeiten</h2>
+        <ul id="mealList"></ul>
     
-    <h2>Gesamt: <span id="totalCalories">0</span> kcal</h2>
+        <h2>Gesamt: <span id="totalCalories">0</span> kcal</h2>
     
-    <div class="progress-bar">
-      <div id="progress" class="progress"></div>
-    </div>
+        <div class="progress-bar">
+          <div id="progress" class="progress"></div>
+        </div>
     
-    <p>Ziel: <span id="goalValue">2000</span> kcal</p>
-    <input id="goalInput" type="number" value="2000" />
+        <p>Ziel: <span id="goalValue">2000</span> kcal</p>
+        <input id="goalInput" type="number" value="2000" />
     
-    <script src="app.js"></script>
-    </body>
+        <script src="app.js"></script>
+
+     </div>
+</body>
 
     
+
