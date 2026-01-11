@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Kalorien Tracker</title>
+
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Barcode Scanner -->
+  <script src="https://unpkg.com/quagga@0.12.1/dist/quagga.min.js"></script>
+</head>
+
+<body>
+  <main class="app">
+    <h1>🍎 Kalorien Tracker</h1>
+
+    <section class="summary">
+      <p>Gesamt: <strong><span id="totalCalories">0</span> kcal</strong></p>
+    </section>
+
+    <form id="mealForm">
+      <input id="mealName" type="text" placeholder="Mahlzeit" required />
+      <input id="mealCalories" type="number" placeholder="kcal" required />
+      <button type="submit">Hinzufügen</button>
+    </form>
+
+    <button id="scanBtn">📷 Barcode scannen</button>
+    <div id="scanner"></div>
+
+    <ul id="mealList"></ul>
+
+    <h2>📊 Wochenstatistik</h2>
+    <canvas id="weekChart" width="320" height="120"></canvas>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
